@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australasian Delirium Association</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header>
+        <img src="logo.png" alt="Delirium Logo" class="logo">
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Sidebar with Icons -->
+    <div class="sidebar">
+        <a href="newsletter.html" title="Newsletter"><i class="fas fa-envelope"></i></a>
+        <a href="journal-club.html" title="Journal Club"><i class="fas fa-book"></i></a>
+        <a href="awareness-day.html" title="World Delirium Awareness Day"><i class="fas fa-globe"></i></a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h1>Welcome to the Australasian Delirium Association</h1>
+            <p>We are a multidisciplinary group of health professionals dedicated to improving delirium care. <a href="about.html">Read more...</a></p>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+        </section>
+
+        <!-- Delirium Resources -->
+        <section class="resources">
+            <h2>Delirium Resources</h2>
+            <ul>
+                <li>Economic Impact of Delirium in Australia</li>
+                <li>Delirium Clinical Care Standards</li>
+                <li>International Federation Delirium Journal</li>
+                <li>Delirium Unbound Podcast</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Chat Box -->
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <span>Chat with Us</span>
+            <button onclick="closeChat()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body">
+            <p>Hello! How can we help you today?</p>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message...">
+            <button><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Chat Icon -->
+    <div class="chat-icon" onclick="toggleChat()">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Australasian Delirium Association
+    </footer>
+
+    <script>
+        // Toggle Chat Box
+        function toggleChat() {
+            const chatBox = document.getElementById("chatBox");
+            chatBox.classList.toggle("active");
+        }
+
+        // Close Chat Box
+        function closeChat() {
+            const chatBox = document.getElementById("chatBox");
+            chatBox.classList.remove("active");
+        }
+    </script>
+</body>
+</html>
